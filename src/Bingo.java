@@ -25,7 +25,7 @@ public class Bingo {
         for (int i = 0; i < carton.length; i++) {
             boolean salir = false;
             while (!salir) {
-                numAleatorio = (int) (Math.random() * 15) + 1;
+                numAleatorio = (int) (Math.random() * 99) + 1;
                 encontrado = false;
                 for (int j = 0; j <= i; j++) {
                     if (numAleatorio == carton[j]) {
@@ -46,7 +46,7 @@ public class Bingo {
         //crear bingo 10 numeros aleatorios entre el 1 y 99
         System.out.println();
         System.out.println("Los números del bingo son:");
-        int[] bingo = new int[15];
+        int[] bingo = new int[99];
 
 
         for (int i = 0; i < bingo.length && !bingoCantado; i++) {
@@ -54,8 +54,8 @@ public class Bingo {
 
             do {
                 repetido=false;
-                numAleatorio = (int) (Math.random() * 15) + 1;
-                for (int j = 0; j < 15; j++) {
+                numAleatorio = (int) (Math.random() * 99) + 1;
+                for (int j = 0; j < 99; j++) {
                     if (numAleatorio == bingo[j]) {
                         repetido=true;
                         break;
